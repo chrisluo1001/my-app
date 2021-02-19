@@ -10,19 +10,33 @@ import Alert from 'react-bootstrap/Alert';
 import AlertBox from '../AlertBox';
 import ModalHelp from '../ModalHelp';
 import { Counter } from '../../redux/Counter';
+import store from "../../store";
 
 const Header = () => {
+
     const [show, setShow] = useState(true);
+    const [count, setCount] = useState(10);
+    //console.log(store.getState());
+    //store.subscribe(() => console.log('Look ma, Redux!!'));
+    let cc = 0;
+    function clickAdd() {
+      store.dispatch( addArticle({ title: 'React Redux Tutorial for Beginners', id: cc++ }));
+    }
+    function addArticle(payload) {
+      return { type: "ADD_ARTICLE", payload };
+    } 
+    //store.dispatch( addArticle({ title: 'React Redux Tutorial for Beginners', id: ()=>{setCount(count+1)} }) );
+    //console.log(store.getState());
     const dd = <Row><Col>Hello Kitty</Col><Col></Col></Row>;
     return (
          <div className="App">
          <Container fluid>
            <Row>
-             <Col>{<Button onClick={() => setShow(!show)}>Show Toast</Button>}</Col>
+             <Col><Button onClick={clickAdd}>Show Toast</Button></Col>
            </Row>
 
            <Row>
-             <Col></Col>
+             <Col>{count}</Col>
              <Col xs={2}></Col>
              <Col>
                  <Button variant="primary" size="sm" id="dst-whatsnew-btn" aria-label={`Click for What's New with DSV`}
