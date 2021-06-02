@@ -1,0 +1,72 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: typeset("public-sans");
+  margin-top: 0.60rem;
+}
+
+.usa-list {
+  li {
+    max-width: none;
+    margin: 0.48rem 0;
+    line-height: 2.24rem;
+  }
+}
+
+.usa-sidenav__item > button {
+  cursor: pointer;
+}
+
+.ctb-fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.ctb-vet-appt-pref-container{
+  margin: 0.24rem 0;
+
+  .grid-row {
+    margin-bottom: 0.96rem;
+
+    &:first-child {
+      margin-bottom: 0.48rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .grid-col-4 {
+    padding-right: 1rem;
+
+    &:first-child {
+      align-items: center;
+      display: flex;
+      padding-left: 2.48rem;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .usa-fieldset,
+  .usa-select {
+    margin: 0;
+  }
+
+  .usa-label {
+    font-size: 1.48rem;
+    line-height: 1.48rem;
+  }
+
+  .ctb-choice-labels {
+    text-align: left;
+    display: block;
+    margin: 0;
+  }
+
+  .ctb-input {
+    margin: 0;
+  }
+}

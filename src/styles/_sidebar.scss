@@ -1,0 +1,102 @@
+.ctb-sidebar {
+  height: 100%;
+  max-width: 26rem;
+  padding: 0.96rem 1.36rem 1.36rem 1.36rem;
+
+  .ctb-workflow-title {
+    font-weight: bold;
+    font-size: 1.42rem;
+    padding: 0.84rem;
+    text-align: center;
+  }
+
+  .ctb-workflow-info {
+    font-size: 1.24rem;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0.48rem;
+  }
+
+  .ctb-navigation {
+    border: 1px solid color($theme-color-base-lighter);
+    margin: 0.96rem 0 0 0;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 75%;
+
+    .usa-sidenav__item {
+      min-width: 20rem;
+      position: relative;
+
+      &:hover {
+        background-color: color($theme-color-base-lightest);
+      }
+
+      &:first-child {
+        border-top: 0 none;
+      }
+    }
+
+    button {
+      background: transparent none;
+      border: 0 none;
+      padding: 0.60rem 0.36rem 0.64rem 0.88rem;
+      font-size: 1.36rem;
+      text-align: left;
+      letter-spacing: 0.012rem;
+      width: 100%;
+
+      &.usa-current {
+        background-color: color($theme-color-base-lighter);
+        font-weight: 700;
+        color: color($theme-color-primary-dark);
+
+        &.ctb-page-error {
+          background-color: color($theme-color-error-lighter);
+          color: color($theme-color-base-darkest);
+
+          &:after {
+            background-color: color($theme-color-error-dark);
+          }
+        }
+      }
+
+      &.ctb-page-error {
+        .ctb-alert-icon {
+          right: -0.24rem;
+          position: absolute;
+          top: 0.24rem;
+
+          svg {
+            font-size: 2.12rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 40em) {
+    .ctb-navigation {
+      .usa-current{
+        &:after {
+          bottom: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .ctb-sidebar-btn {
+    padding: 0.84rem;
+    margin-top: 0.92rem;
+    font-size: 1.42rem;
+    letter-spacing: 0.036rem;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: -1px 1px 4px color($theme-color-base);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

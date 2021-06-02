@@ -1,0 +1,71 @@
+{
+  "releases": [
+    {
+      "version": "2.0",
+      "releaseDate": "TBD",
+      "sections": [
+        {
+          "heading": "Welcome to CTB 2.0",
+          "description": "The Decision Support Tool (DST) and legacy Consult Toolbox (CTB) have been replaced by Consult Toolbox 2.0.  This application is integrated with CPRS and combines the functionality from the DST and legacy CTB applications.  Although the functionality is largely the same, you will notice changes throughout the application."
+        },
+        {
+          "heading": "How to access CTB 2.0",
+          "description": "If enabled at your station, you will be able to access CTB 2.0 by clicking on the “Open Consult Toolbox” button in the following CPRS screens:"
+        },
+        {
+          "heading": "",
+          "updates": [
+            {
+              "title": "Order a Consult"
+            },
+            {
+              "title": "Receive Consult"
+            },
+            {
+              "title": "Discontinue Consult"
+            },
+            {
+              "title": "Cancel (Deny) Consult"
+            },
+            {
+              "title": "Forward Consult"
+            },
+            {
+              "title": "Add Comment to Consult"
+            },
+            {
+              "title": "Update Significant Findings"
+            },
+            {
+              "title": "Administratively Complete"
+            }
+          ]
+        },
+        {
+          "heading": "",
+          "description": "Since you are already logged into CPRS, you will not be asked to enter additional credentials when accessing CTB 2.0"
+        },
+        {
+          "heading": "Set up CTB user roles",
+          "description": "You can identify your user role within CTB 2.0 to help configure the screens for your duties and responsibilities.  While in CTB 2.0, click the User Settings page in the left navigation.  Under “User Role” select the role that best describes your duties.  Once you click off the screen, the setting will be saved."
+        },
+        {
+          "heading": "What you can do in CTB 2.0",
+          "description": "CTB 2.0 allows you to document your actions and decisions while processing a consult.  The selections you make will generate standard text that is added to the consult comments to provide a consistent history of action taken on the consult and to support aggregate reporting on consult processing."
+        },
+        {
+          "heading": "",
+          "description": "CTB pages and options available will depend on the consult action you are taking in CPRS and on the type of consult.  Please see the User’s Guide and VA training materials for additional information."
+        },
+        {
+          "heading": "How to save your CTB 2.0 data to the consult",
+          "description": "Once you have selected/entered your information in CTB, click the save button to see a preview of the information that will be written to the consult.  You may return to continue editing the CTB data or click the close button to return to the CPRS screen.  Your data will be transferred to CPRS.  If you are ordering a consult, you will see a message in CPRS indicating that the information is linked to the consult and the information will be written to the consult comments when the consult is signed.  If your consult has already been signed, the information will appear in the CPRS window and will be written to the consult when you click the OK button."
+        },
+        {
+          "heading": "For more information",
+          "description": "You can click the Help link in the upper right corner of the CTB screen at any time to see the full User’s Guide.  Links to additional VA resources are available in the User’s Guide."
+        }
+      ]
+    }
+  ]
+}

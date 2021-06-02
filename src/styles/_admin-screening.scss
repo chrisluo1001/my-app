@@ -1,0 +1,45 @@
+.ctb-asr, .ctb-pasr, .ctb-pctr {
+  border: 1px solid color($theme-color-base-lighter);
+  margin-bottom: 1.48rem;
+  padding: 0.96rem;
+
+  h2 {
+    margin: 0 0 0.48rem 0;
+  }
+
+  div {
+    margin: 0.24rem 0;
+  }
+
+}
+
+
+.ctb-text-large {
+  font-size: 2.36rem;
+  font-family: $fontFamily;
+  color: color($theme-color-base-darker);
+  margin: 0.40rem 0 1.08rem 0.24rem;
+}
+
+.ctb-text-medium {
+  font-size: 1.96rem;
+  font-family: $fontFamily;
+  color: color($theme-color-base-darker);
+  margin: 0.36rem 0 1.08rem 0.24rem;
+}
+
+.ctb-staff-member {
+  position: relative;
+
+  .usa-input {
+    width: calc(100% - 8rem);
+  }
+
+  .usa-button {
+    bottom: 0;
+    margin: 0;
+    padding: 0.72rem;
+    position: absolute;
+    right: 0;
+  }
+}

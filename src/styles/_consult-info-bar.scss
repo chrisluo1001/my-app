@@ -1,0 +1,138 @@
+.ctb-consult-info {
+  margin: 0.96rem 1.08rem 0.32rem 1.08rem;
+  padding: 0.48rem 0.72rem 0.72rem 0.72rem;
+  width: 100%;
+
+  .ctb-consult-info-section {
+    border-right: 1px solid $vertical-rule-gray;
+    display: inline-block;
+    margin: 0.24rem 1.16rem 0 0;
+    padding-right: 1.16rem;
+
+    .ctb-consult-info-bottom-row,
+    .pt-consult-info-bottom-row {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-top: 0.96rem;
+    }
+
+    .ctb-vet-ssn-wrapper {
+      margin-left: 1.96rem;
+    }
+
+    &:last-child {
+      border-right: 0 none;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+
+  .ctb-urgent-elig-wrapper {
+    position: absolute;
+    right: 1.02rem;
+    top: 0.06rem;
+
+    svg {
+      color: color($theme-color-success-dark);
+      display: inline-block;
+      font-size: 1.60rem;
+      vertical-align: middle;
+    }
+
+    .ctb-urgent-elig {
+      display: inline-block;
+      font-size: 1.24rem;
+      line-height: 1.48rem;
+      margin-left: 0.36rem;
+      vertical-align: middle;
+    }
+  }
+
+  h4 {
+    display: block;
+    font-size: 1.30rem;
+    letter-spacing: 0.024rem;
+    margin: 0.12rem 0 0.24rem 0;
+    color: color($theme-color-base-darker);
+  }
+
+  .grid-col-ptinfo {
+    flex: 25%;
+  }
+
+  .grid-col-ptaddr {
+    flex: 15%;
+  }
+
+  .grid-col-consultinfo {
+    flex: 36%;
+
+    .grid-col-auto {
+      flex: 1 0 auto;
+      margin-right: 0;
+
+      &.grid-col-consult-name {
+        flex: 3 0 auto;
+      }
+    }
+  }
+
+  .grid-col-eliginfo {
+    flex: 15%;
+
+    div.ctb-elig-container {
+      display: flex;
+      margin-top: 0.24rem;
+
+      .ctb-alert-icon svg {
+        width: 2.48rem;
+        height: 2.48rem;
+        margin: 0.48rem 0.84rem 0 0;
+      }
+
+      .ctb-elig-info {
+        color: color($theme-color-base-darker);
+        display: inline-block;
+        font-size: 1.48rem;
+        font-weight: bold;
+        letter-spacing: 0.024rem;
+        margin-top: 0.36rem;
+
+        .ctb-elig-reason {
+          font-size: 1.40rem;
+          margin-bottom: 0.30rem;
+        }
+      }
+    }
+  }
+
+  .grid-row {
+    margin-top: 0.96rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .grid-col-auto {
+      margin-right: 1.48rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ctb-info {
+    display: block;
+    font-size: 1.36rem;
+    line-height: 1.96rem;
+    padding-left: 0.12rem;
+    color: color($theme-color-base-ink);
+  }
+
+  .ctb-main-info {
+    font-size: 1.36rem;
+    letter-spacing: 0.024rem;
+    color: color($theme-color-base-ink);
+  }
+}

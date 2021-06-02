@@ -1,0 +1,75 @@
+.ctb-main-content {
+  height: 100%;
+  padding: 1.48rem 1.48rem 1.48rem 0.12rem;
+
+  .ctb-alert + .ctb-page.ctb-scrollable {
+    height: calc(100% - 6rem);
+  }
+
+  .ctb-page.ctb-scrollable {
+    border-bottom: 0 none;
+    color: color($theme-color-base-darkest);
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+
+    &.ctb-consult-history {
+      border-bottom: 1px solid color($theme-color-base-light);
+    }
+
+    h2.ctb-page-title {
+      margin: 0 0 1.48rem 0;
+      font-size: 2.24rem;
+      color: color($theme-color-base-darker);
+    }
+
+    .ctb-page-title-h3 {
+      margin: 0 0 1.48rem 0;
+      font-size: 2.08rem;
+      color: color($theme-color-base-darker);
+    }
+
+    h3 {
+      color: color($theme-color-base-darker);
+    }
+
+    .grid-col-6:first-child {
+      border-right: 1px solid $vertical-rule-gray;
+      padding: 0 2.12rem 0 0;
+      min-height: 24rem;
+
+      > :first-child,
+      > :first-child.ctb-input > .ctb-single-checkbox-label {
+        margin-top: 0;
+
+        label,
+        legend,
+        .ctb-input {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .grid-col-6:last-child {
+      padding-left: 2.12rem;
+      padding-right: 2.12rem;
+
+      > :first-child {
+        margin-top: 0;
+
+        label,
+        legend,
+        .ctb-input {
+          margin-top: 0;
+        }
+      }
+    }
+
+  }
+
+  .ctb-va-consult-help {
+    display: block;
+    margin-top: 1.48rem;
+  }
+}
+

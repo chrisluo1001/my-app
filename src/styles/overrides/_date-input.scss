@@ -1,0 +1,168 @@
+/* date input box styling */
+.DateInput {
+  background: #fff;
+  margin-top: 0.48rem;
+}
+
+.DateInput_input {
+  background-image: url('../assets/img/calendar-alt.png');
+  background-position: 96% 48%;
+  background-repeat: no-repeat;
+  background-size: 1.84rem;
+  cursor: pointer;
+}
+
+.SingleDatePickerInput {
+  background: none;
+}
+
+.SingleDatePickerInput__withBorder {
+  border: none;
+}
+
+/* date text box input */
+.DateInput_input__small {
+  color: color($theme-color-base-dark);
+  border: 1px solid color($theme-color-base);
+  font-size: 1.48rem;
+  font-weight: 400;
+  padding: 0.72rem;
+  width: 12.0rem;
+}
+
+.SingleDatePicker button:hover {
+  background: none;
+}
+
+/* keyboard shortcut button */
+.DayPickerKeyboardShortcuts_buttonReset {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  width: 3.2rem;
+ }
+
+.DayPickerKeyboardShortcuts_buttonReset .DayPickerKeyboardShortcuts_showSpan {
+  font-size: 1.6rem!important;
+  font-weight: bold!important;
+}
+
+.DayPickerKeyboardShortcuts_show__bottomRight_3 {
+  bottom: 0!important;
+  position: absolute!important;
+  right: 0!important;
+}
+
+.DayPickerKeyboardShortcuts_panel {
+  margin: 2.1rem;
+  padding: 0.4rem;
+}
+
+.DayPickerKeyboardShortcuts_closeSvg {
+  fill: #cacccd;
+  height: 15px;
+  margin: 0;
+  width: 15px;
+}
+
+.DayPickerKeyboardShortcuts_close {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  z-index: 2;
+}
+
+.KeyboardShortcutRow {
+  margin: 0.9rem 0;
+  line-height: 1.8rem;
+}
+
+.KeyboardShortcutRow_key {
+  font-weight: bold;
+}
+
+/* calendar month layout changes */
+.DayPicker {
+  box-shadow: 0px 0px 5px color($theme-color-base);
+}
+
+.DayPicker__withBorder {
+  border: 1px solid color($theme-color-base);
+}
+
+.CalendarMonth {
+  margin: 0;
+  padding: 0;
+}
+
+.CalendarMonth_caption {
+  height: 0;
+}
+
+.DayPicker_weekHeader_ul {
+  line-height: 1.1rem;
+  margin: 0;
+}
+
+.DayPicker_weekHeader_li {
+  margin: 0;
+}
+
+.CalendarMonth_table {
+  margin-top: 2.0rem;
+}
+
+.CalendarMonth_table td {
+  border: 0;
+}
+
+.CalendarDay, .CalendarDay:hover {
+  border: 0;
+  padding: 0;
+}
+
+.CalendarDay__selected {
+  background-color: color($theme-color-primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* AirBnb's react-dates */
+.DayPicker_transitionContainer {
+  min-width: 316px;
+  min-height: 300px;
+}
+
+.SingleDatePicker_picker {
+  min-width: 316px;
+  min-height: 296px;
+}
+
+.DayPicker_focusRegion {
+  min-width: 316px;
+  min-height: 290px;
+}
+
+// Will edit everything selected including everything between a range of dates
+.CalendarDay__selected_span {
+  background: #82e0aa; //background
+  border: 1px solid red; //default styles include a border
+  color: white; //text
+}
+
+// Will edit when hovered over. _span style also has this property
+.CalendarDay__selected:hover {
+  background: color($theme-color-primary-darker);
+  color: white;
+}
+
+// Will edit when the second date (end date) in a range of dates
+// is not yet selected. Edits the dates between your mouse and said date
+.CalendarDay__hovered_span:hover,
+.CalendarDay__hovered_span {
+  background: brown;
+}

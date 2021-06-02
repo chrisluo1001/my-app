@@ -1,0 +1,33 @@
+.ctb-hide-whats-new-box {
+  background-color: color($theme-color-base-lightest);
+  border-radius: 5px;
+  margin: 0.96rem auto;
+  padding: 0.96rem;
+  width: 38rem;
+
+  .usa-checkbox__label {
+    margin-top: 0;
+
+    &::before {
+      left: 0.48rem;
+    }
+  }
+}
+
+.ctb-whats-new-updated {
+  font-size: 1.36rem;
+  font-style: italic;
+  margin: 0;
+  text-align: right;
+}
+
+/* text flash for what's new */
+.ctb-modal-new-text {
+  animation: flashNew 0.7s 2;
+  color: #000;
+}
+@keyframes flashNew {
+  0%   { opacity: 1; }
+  50%  { opacity: .4;}
+  100% { opacity: 1;}
+}

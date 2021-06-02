@@ -1,0 +1,58 @@
+.ctb-facilities-list {
+  border-spacing: 0;
+  font-size: 1.48rem;
+  margin-top: 1.48rem;
+  width: 100%;
+
+  thead {
+    th {
+      border-bottom: 1px solid;
+      color: color($theme-color-base-darker);
+      font-size: 1.36rem;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      border-bottom: 1px solid color($theme-color-base-lighter);
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+
+  td, th {
+    padding: 1rem;
+  }
+
+  .ctb-exclude-facility {
+    color: color($theme-color-base-light);
+  }
+
+  .ctb-data-not-available {
+    font-style: italic;
+  }
+}
+
+.ctb-facilities-list-message {
+  font-size: 1.96rem;
+  font-style: italic;
+  margin-top: 1.48rem;
+  padding: 1.48rem;
+  text-align: center;
+}
+
+.ctb-facilities-list-caption {
+  font-size: 1.84rem;
+  letter-spacing: 0.024rem;
+  text-align: left;
+  font-weight: bold;
+  color: color($theme-color-base-darker);
+  position: relative;
+}

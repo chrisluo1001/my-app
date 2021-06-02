@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
-import store from './store';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import configureStore from "./store/configureStore";
+import initialState from "./reducers/initialState";
+//import "./styles/root.scss";
 
+const store = configureStore();
 ReactDOM.render(
   <React.StrictMode>
    <Provider store={store}>

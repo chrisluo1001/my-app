@@ -1,0 +1,117 @@
+.ctb-header {
+  align-items: center;
+  background: color($theme-color-primary-darker);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.12rem 0.96rem;
+  box-shadow: 0px 2px 5px color($theme-color-base-light);
+
+  .ctb-header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .ctb-va-logo {
+    background-image: url('../assets/img/VA-Veterans-Affairs-SEAL.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 5.2rem;
+    width: 5.2rem;
+    margin: 0.12rem 0.72rem 0.0rem -0.12rem;
+    overflow: hidden;
+
+    .ctb-va-logo-txt {
+      left: -10000px;
+      position: relative;
+    }
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 2.24rem;
+    letter-spacing: 0.08rem;
+    margin: 0.48rem 1.2rem 0 0;
+    padding: 0;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .ctb-version {
+    font-size: 1.3rem;
+    letter-spacing: 0.03rem;
+    color: color($theme-color-base-lightest);
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .ctb-header-right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    vertical-align: bottom;
+  }
+
+  .ctb-header-right a:hover {
+    text-decoration: underline;
+  }
+
+  button, a {
+    background: transparent none;
+    border: 0 none;
+    color: color($theme-color-base-lightest);
+    cursor: pointer;
+    font-size: 1.3rem;
+    letter-spacing: 0.04rem;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+
+    :hover {
+      text-decoration: underline;
+    }
+
+    svg {
+      font-weight: normal;
+      margin: 0 0.4rem 0 0;
+      vertical-align: middle;
+      -webkit-filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 1));
+      filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 1));
+    }
+
+    &:last-child {
+      margin-right: 1.48rem;
+    }
+
+    &.ctb-whats-new-btn {
+      margin: -0.1rem 3.6rem 0.0rem 0;
+      svg {
+        font-size: 1.96rem;
+        margin: -0.2rem 0.6rem 0.0rem 0;
+      }
+    }
+
+    &.ctb-user-feedback-btn {
+      margin: -0.2rem 3.6rem 0.0rem 0;
+      svg {
+        font-size: 1.84rem;
+        margin: -0.2rem 0.64rem 0.2rem 0;
+      }
+    }
+
+    &.ctb-help-link {
+      margin: -0.1rem 3.6rem 0.0rem 0;
+      svg {
+        font-size: 1.72rem;
+        margin: -0.2rem 0.5rem 0.2rem 0;
+      }
+    }
+
+    &.ctb-logout-link {
+      margin: -0.2rem 1.6rem 0.0rem 0;
+      svg {
+        font-size: 1.84rem;
+        margin: -0.2rem 0.5rem 0.2rem 0;
+      }
+    }
+  }
+}

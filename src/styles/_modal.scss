@@ -1,0 +1,142 @@
+#react-aria-modal-dialog:focus {
+  // Overriding default inline styles for react-aria-modal-dialog
+  outline: 0.25rem solid color("blue-40v") !important;
+  outline-offset: 0.25rem !important;
+}
+
+.ctb-modal-container {
+  background-color:white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 36px black;
+  padding: 1.36rem;
+  width: 68rem;
+
+  &.ctb-va-cc-modal-container {
+    width: 40rem;
+  }
+}
+
+.ctb-modal-header {
+  border-bottom: 1px solid color($theme-color-base-light);
+  margin-bottom: 0.84rem;
+  min-height: 3.24rem;
+  padding-bottom: 0.96rem;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.ctb-modal-body {
+  font-family: $fontFamily;
+  font-size: 1.48rem;
+
+  h2 {
+    font-size: 1.72rem;
+  }
+}
+
+.ctb-consult-factor-preview {
+  line-height: 2.48rem;
+  margin: 0.48rem 0;
+  padding: 0.72rem;
+
+  &.ctb-view-seoc-text {
+    border-top: 0 none;
+    padding-top: 0;
+  }
+}
+
+.ctb-modal-footer {
+  margin-top: 1.24rem;
+
+  .ctb-modal-footer-close-btn {
+    padding: 0.84rem 1.36rem;
+    box-shadow: -1px 1px 4px color($theme-color-base);
+    font-size: 1.42rem;
+    letter-spacing: 0.036rem;
+  }
+  .whats-new-modal-close-btn {
+    box-shadow: -1px 1px 4px color($theme-color-base);
+    letter-spacing: 0.036rem;
+  }
+
+  .ctb-save-alert {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 70%;
+    margin: 0 0 0 1.84rem;
+    text-align: left;
+
+    .ctb-alert-icon {
+      float: left;
+      margin: 0 0.48rem 3rem 0;
+    }
+    .ctb-save-alert-text {
+      font-size: 1.48rem;
+      line-height: 1.96rem;
+    }
+  }
+
+  .usa-button {
+    margin-right: 2.96rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.ctb-modal-close-btn {
+  position: absolute;
+  right: -0.96rem;
+  top: -0.96rem;
+
+  &:hover {
+    background-color: color($theme-color-base-light);
+  }
+}
+
+.ctb-preview-modal {
+  .ctb-scrollable {
+    max-height: 42rem;
+  }
+}
+
+.ctb-errors-modal {
+  .ctb-modal-body {
+    font-size: 1.48rem;
+  }
+
+  .ctb-error-modal-section {
+    border-bottom: 1px solid color($theme-color-base-light);
+    margin-bottom: 0.96rem;
+    padding-bottom: 0.96rem;
+
+    &:last-child {
+      border-bottom: 0 none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-top: 0.48rem;
+  }
+
+  li {
+    font-size: 1.72rem;
+    margin: 0.48rem 0 0.48rem 0;
+  }
+
+  .ctb-error-header {
+    font-size: 1.72rem;
+    font-weight: bold;
+    margin: 0.48rem 0 0.84rem 0;
+  }
+
+  p {
+    margin-top: 0;
+    line-height: 1.96rem;
+  }
+}
